@@ -1,0 +1,166 @@
+/* ---------- COMMON ---------- */
+.collapsed-container,
+.expanded-container {
+  width: 600px;
+  margin: 16px auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+              0 4px 8px rgba(60, 64, 67, 0.15);
+  padding: 10px 12px;
+  background: white;
+}
+
+/* ---------- COLLAPSED ---------- */
+.collapsed-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: text;
+}
+
+.collapsed-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.collapsed-icons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ---------- EXPANDED ---------- */
+.expanded-container input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 8px;
+  background: transparent;
+}
+
+.expanded-container input::placeholder {
+  color: #5f6368;
+}
+
+/* ---------- LIST MODE ---------- */
+.list-elements {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.list-elements input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+
+/* ---------- ACTION BAR ---------- */
+.expanded-container > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+/* Left icons */
+.expanded-container > div:last-child > button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  color: #5f6368;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expanded-container > div:last-child > button:hover {
+  background-color: #f1f3f4;
+}
+
+/* Material icons size */
+.material-icons-outlined {
+  font-size: 20px;
+}
+
+/* ---------- RIGHT ACTIONS ---------- */
+.action-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.action-right button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  color: #5f6368;
+}
+
+.action-right button:hover {
+  background-color: #f1f3f4;
+}
+
+/* Close button */
+.close-btn {
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #202124;
+}
+
+.close-btn:hover {
+  background-color: #f1f3f4;
+}
+
+/* ---------- MODAL (EDIT MODE) ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  width: 640px;
+}
+
+/* ---------- ADD LIST ITEM ROW ---------- */
+.add-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  color: #5f6368;
+  cursor: pointer;
+  user-select: none;
+}
+
+.add-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+
+.add-icon {
+  font-size: 20px;
+  margin-left: 2px;
+}
+
+.add-text {
+  font-size: 14px;
+}
+

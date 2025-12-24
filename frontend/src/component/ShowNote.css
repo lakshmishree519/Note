@@ -1,0 +1,62 @@
+
+
+.show-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.note-element {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.note-element .title {
+     display: flex;
+  align-items: flex-start; 
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #202124;
+}
+
+.note-item-row {
+  display: flex;
+  align-items: flex-start; 
+  gap: 8px;
+  padding: 4px 0;
+}
+
+
+.note-item-row input[type="checkbox"] {
+  margin-top: 2px; 
+  cursor: pointer;
+}
+
+
+.note-item-row p {
+  margin: 0;
+  font-size: 14px;
+  color: #202124;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+
+.note-item-row.text-only {
+  padding-left: 0;
+}
+
+/* Checked list item (strike-through) */
+.note-item-row input[type="checkbox"]:checked + p {
+  text-decoration: line-through;
+  color: #5f6368;
+}
+
+
+
+
