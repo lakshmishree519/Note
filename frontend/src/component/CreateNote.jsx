@@ -114,7 +114,7 @@ const CreateNote = ({ onNoteCreated,editMode,note,onClose}) => {
   const saveText = async () => {
     try {
          const noteLists = [
-        {id:note.noteLists?.[0]?.id, content: contentRef.current, checked: false }
+        { content: contentRef.current, checked: false }
       ];
    const userId =  Number(getUserId());
      console.log(userId);
@@ -135,7 +135,7 @@ const CreateNote = ({ onNoteCreated,editMode,note,onClose}) => {
   const updateText =async ()=>{
     try{
     const noteLists = [
-        { content: contentRef.current, checked: false }
+        { id:note.noteLists?.[0]?.id,content: contentRef.current, checked: false }
       ];
    const userId =  Number(getUserId());
      console.log(userId);

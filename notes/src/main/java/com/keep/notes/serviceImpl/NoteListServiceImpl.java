@@ -86,20 +86,16 @@ public class NoteListServiceImpl implements NoteListService{
 
             Note note = new Note();
 
-            // If ID exists → UPDATE
+       
             if (incomingNote.getId() != null) {
                 note.setId(incomingNote.getId());
             }
-
-            // Set fields
             note.setContent(incomingNote.getContent());
             note.setChecked(incomingNote.getChecked());
 
-            // ⭐ VERY IMPORTANT: Set parent
             note.setNoteList(noteList);
             System.out.print(note);
 
-            // Add to parent collection
             noteList.getNoteLists().add(note);
         }}
         System.out.println(noteList);
