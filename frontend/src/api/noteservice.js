@@ -18,6 +18,8 @@ export const updateChecked =(payload,id)=>api.put(`/api/keepNotes/updateCheck/${
 export const register = (payload)=>publicApi.post('/api/keepNotes/register',payload);
 export const login =(payload)=>publicApi.post('/api/keepNotes/login',payload);
 export const updatedNoteList =(payload,id)=>api.put(`/api/keepNotes/updated/${id}`,payload);
+export const deleteNoteList = (id)=>api.delete(`/api/keepNotes/delete/${id}`);
+export const deleteSingleNote = (noteid)=>api.delete(`/api/keepNotes/deleteSingle/${noteid}`);
 api.interceptors.request.use((config)=>{
    
     const token = getToken();
